@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Main {
-    private static final String INPUT_FILE = "input.txt";
-    private static final String OUTPUT_FILE = "output.txt";
+    private static final String INPUT_FILE = "in.txt";
+    private static final String OUTPUT_FILE = "out.txt";
 
     public static String parse(CharStream charStream) {
         GolangLexer lexer = new GolangLexer(charStream);
