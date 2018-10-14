@@ -1,0 +1,13 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": "\u003cEOF\u003e"
+    }
+  ]
+}
