@@ -20,7 +20,7 @@ and partially modified.
 - install maven
 - unzip archive with project
 - go to directory where you unzipped project using terminal
-- ```mvn clean compile exec:java``` run this command to build and execute (input will be read from input.txt, result will be printed in output.txt)
+- ```mvn clean compile exec:java``` run this command to build and execute (input will be read from in.txt, result will be printed in out.txt)
 - ```mvn test``` run this command to run all tests (result of testing will be shown on console)
 - All test cases in directory ```tests/```
 ### Instruction (using Intellij Idea) 
