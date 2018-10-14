@@ -1,15 +1,12 @@
 package golang;// Generated from Golang.g4 by ANTLR 4.7.1
-
-import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.atn.ATN;
-import org.antlr.v4.runtime.atn.ATNDeserializer;
-import org.antlr.v4.runtime.atn.ParserATNSimulator;
-import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.tree.ParseTreeListener;
-import org.antlr.v4.runtime.tree.TerminalNode;
-
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
+import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class GolangParser extends Parser {
@@ -278,11 +275,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_sourceFile; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSourceFile(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSourceFile(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSourceFile(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSourceFile(this);
 		}
 	}
 
@@ -350,11 +347,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_packageClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterPackageClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterPackageClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitPackageClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitPackageClause(this);
 		}
 	}
 
@@ -400,11 +397,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_importDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterImportDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterImportDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitImportDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitImportDecl(this);
 		}
 	}
 
@@ -479,11 +476,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_importSpec; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterImportSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterImportSpec(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitImportSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitImportSpec(this);
 		}
 	}
 
@@ -535,11 +532,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_importPath; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterImportPath(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterImportPath(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitImportPath(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitImportPath(this);
 		}
 	}
 
@@ -580,11 +577,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_topLevelDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTopLevelDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTopLevelDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTopLevelDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTopLevelDecl(this);
 		}
 	}
 
@@ -645,11 +642,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_declaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterDeclaration(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitDeclaration(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitDeclaration(this);
 		}
 	}
 
@@ -715,11 +712,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_constDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterConstDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterConstDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitConstDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitConstDecl(this);
 		}
 	}
 
@@ -797,11 +794,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_constSpec; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterConstSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterConstSpec(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitConstSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitConstSpec(this);
 		}
 	}
 
@@ -860,11 +857,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_identifierList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterIdentifierList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterIdentifierList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitIdentifierList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitIdentifierList(this);
 		}
 	}
 
@@ -880,7 +877,7 @@ public class GolangParser extends Parser {
 			setState(281);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,11,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -889,7 +886,7 @@ public class GolangParser extends Parser {
 					setState(278);
 					match(IDENTIFIER);
 					}
-					}
+					} 
 				}
 				setState(283);
 				_errHandler.sync(this);
@@ -921,11 +918,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expressionList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterExpressionList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterExpressionList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitExpressionList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitExpressionList(this);
 		}
 	}
 
@@ -941,7 +938,7 @@ public class GolangParser extends Parser {
 			setState(289);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,12,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -950,7 +947,7 @@ public class GolangParser extends Parser {
 					setState(286);
 					expression(0);
 					}
-					}
+					} 
 				}
 				setState(291);
 				_errHandler.sync(this);
@@ -988,11 +985,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeDecl(this);
 		}
 	}
 
@@ -1065,11 +1062,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeSpec; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeSpec(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeSpec(this);
 		}
 	}
 
@@ -1110,11 +1107,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_functionDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterFunctionDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterFunctionDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitFunctionDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitFunctionDecl(this);
 		}
 	}
 
@@ -1170,11 +1167,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_function; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterFunction(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterFunction(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitFunction(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitFunction(this);
 		}
 	}
 
@@ -1218,11 +1215,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_methodDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterMethodDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterMethodDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitMethodDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitMethodDecl(this);
 		}
 	}
 
@@ -1277,11 +1274,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_receiver; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterReceiver(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterReceiver(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitReceiver(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitReceiver(this);
 		}
 	}
 
@@ -1325,11 +1322,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_varDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterVarDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterVarDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitVarDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitVarDecl(this);
 		}
 	}
 
@@ -1407,11 +1404,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_varSpec; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterVarSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterVarSpec(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitVarSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitVarSpec(this);
 		}
 	}
 
@@ -1487,11 +1484,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_block; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterBlock(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterBlock(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitBlock(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitBlock(this);
 		}
 	}
 
@@ -1539,11 +1536,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_statementList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterStatementList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterStatementList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitStatementList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitStatementList(this);
 		}
 	}
 
@@ -1635,11 +1632,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_statement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterStatement(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterStatement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitStatement(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitStatement(this);
 		}
 	}
 
@@ -1793,11 +1790,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_simpleStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSimpleStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSimpleStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSimpleStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSimpleStmt(this);
 		}
 	}
 
@@ -1873,11 +1870,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expressionStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterExpressionStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterExpressionStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitExpressionStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitExpressionStmt(this);
 		}
 	}
 
@@ -1915,11 +1912,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_sendStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSendStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSendStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSendStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSendStmt(this);
 		}
 	}
 
@@ -1958,11 +1955,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_incDecStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterIncDecStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterIncDecStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitIncDecStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitIncDecStmt(this);
 		}
 	}
 
@@ -2014,11 +2011,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_assignment; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterAssignment(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterAssignment(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitAssignment(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitAssignment(this);
 		}
 	}
 
@@ -2054,11 +2051,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_assign_op; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterAssign_op(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterAssign_op(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitAssign_op(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitAssign_op(this);
 		}
 	}
 
@@ -2115,11 +2112,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_shortVarDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterShortVarDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterShortVarDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitShortVarDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitShortVarDecl(this);
 		}
 	}
 
@@ -2155,11 +2152,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_emptyStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterEmptyStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterEmptyStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitEmptyStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitEmptyStmt(this);
 		}
 	}
 
@@ -2195,11 +2192,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_labeledStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterLabeledStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterLabeledStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitLabeledStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitLabeledStmt(this);
 		}
 	}
 
@@ -2238,11 +2235,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_returnStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterReturnStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterReturnStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitReturnStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitReturnStmt(this);
 		}
 	}
 
@@ -2285,11 +2282,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_breakStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterBreakStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterBreakStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitBreakStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitBreakStmt(this);
 		}
 	}
 
@@ -2332,11 +2329,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_continueStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterContinueStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterContinueStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitContinueStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitContinueStmt(this);
 		}
 	}
 
@@ -2379,11 +2376,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_gotoStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterGotoStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterGotoStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitGotoStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitGotoStmt(this);
 		}
 	}
 
@@ -2417,11 +2414,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_fallthroughStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterFallthroughStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterFallthroughStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitFallthroughStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitFallthroughStmt(this);
 		}
 	}
 
@@ -2456,11 +2453,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_deferStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterDeferStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterDeferStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitDeferStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitDeferStmt(this);
 		}
 	}
 
@@ -2509,11 +2506,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_ifStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterIfStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterIfStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitIfStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitIfStmt(this);
 		}
 	}
 
@@ -2595,11 +2592,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSwitchStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSwitchStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSwitchStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSwitchStmt(this);
 		}
 	}
 
@@ -2656,11 +2653,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_exprSwitchStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterExprSwitchStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterExprSwitchStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitExprSwitchStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitExprSwitchStmt(this);
 		}
 	}
 
@@ -2739,11 +2736,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_exprCaseClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterExprCaseClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterExprCaseClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitExprCaseClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitExprCaseClause(this);
 		}
 	}
 
@@ -2782,11 +2779,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_exprSwitchCase; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterExprSwitchCase(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterExprSwitchCase(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitExprSwitchCase(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitExprSwitchCase(this);
 		}
 	}
 
@@ -2847,11 +2844,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeSwitchStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeSwitchStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeSwitchStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeSwitchStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeSwitchStmt(this);
 		}
 	}
 
@@ -2920,11 +2917,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeSwitchGuard; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeSwitchGuard(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeSwitchGuard(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeSwitchGuard(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeSwitchGuard(this);
 		}
 	}
 
@@ -2982,11 +2979,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeCaseClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeCaseClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeCaseClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeCaseClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeCaseClause(this);
 		}
 	}
 
@@ -3025,11 +3022,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeSwitchCase; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeSwitchCase(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeSwitchCase(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeSwitchCase(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeSwitchCase(this);
 		}
 	}
 
@@ -3084,11 +3081,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeList(this);
 		}
 	}
 
@@ -3143,11 +3140,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_selectStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSelectStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSelectStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSelectStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSelectStmt(this);
 		}
 	}
 
@@ -3204,11 +3201,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_commClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterCommClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterCommClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitCommClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitCommClause(this);
 		}
 	}
 
@@ -3250,11 +3247,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_commCase; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterCommCase(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterCommCase(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitCommCase(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitCommCase(this);
 		}
 	}
 
@@ -3326,11 +3323,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_recvStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterRecvStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterRecvStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitRecvStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitRecvStmt(this);
 		}
 	}
 
@@ -3394,11 +3391,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_forStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterForStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterForStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitForStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitForStmt(this);
 		}
 	}
 
@@ -3463,11 +3460,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_forClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterForClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterForClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitForClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitForClause(this);
 		}
 	}
 
@@ -3541,11 +3538,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_rangeClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterRangeClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterRangeClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitRangeClause(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitRangeClause(this);
 		}
 	}
 
@@ -3602,11 +3599,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_goStmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterGoStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterGoStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitGoStmt(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitGoStmt(this);
 		}
 	}
 
@@ -3649,11 +3646,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_type; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitType(this);
 		}
 	}
 
@@ -3722,11 +3719,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeName(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeName(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeName(this);
 		}
 	}
 
@@ -3795,11 +3792,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeLit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeLit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeLit(this);
 		}
 	}
 
@@ -3892,11 +3889,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arrayType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterArrayType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterArrayType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitArrayType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitArrayType(this);
 		}
 	}
 
@@ -3937,11 +3934,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arrayLength; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterArrayLength(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterArrayLength(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitArrayLength(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitArrayLength(this);
 		}
 	}
 
@@ -3976,11 +3973,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterElementType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterElementType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitElementType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitElementType(this);
 		}
 	}
 
@@ -4015,11 +4012,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_pointerType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterPointerType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterPointerType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitPointerType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitPointerType(this);
 		}
 	}
 
@@ -4065,11 +4062,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterInterfaceType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterInterfaceType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitInterfaceType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitInterfaceType(this);
 		}
 	}
 
@@ -4087,7 +4084,7 @@ public class GolangParser extends Parser {
 			setState(631);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,53,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -4096,7 +4093,7 @@ public class GolangParser extends Parser {
 					setState(627);
 					eos();
 					}
-					}
+					} 
 				}
 				setState(633);
 				_errHandler.sync(this);
@@ -4127,11 +4124,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_sliceType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSliceType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSliceType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSliceType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSliceType(this);
 		}
 	}
 
@@ -4173,11 +4170,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_mapType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterMapType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterMapType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitMapType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitMapType(this);
 		}
 	}
 
@@ -4220,11 +4217,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_channelType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterChannelType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterChannelType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitChannelType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitChannelType(this);
 		}
 	}
 
@@ -4292,11 +4289,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_methodSpec; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterMethodSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterMethodSpec(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitMethodSpec(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitMethodSpec(this);
 		}
 	}
 
@@ -4359,11 +4356,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_functionType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterFunctionType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterFunctionType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitFunctionType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitFunctionType(this);
 		}
 	}
 
@@ -4403,11 +4400,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_signature; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSignature(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSignature(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSignature(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSignature(this);
 		}
 	}
 
@@ -4462,11 +4459,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_result; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterResult(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterResult(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitResult(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitResult(this);
 		}
 	}
 
@@ -4514,11 +4511,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_parameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterParameters(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitParameters(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitParameters(this);
 		}
 	}
 
@@ -4579,11 +4576,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_parameterList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterParameterList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterParameterList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitParameterList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitParameterList(this);
 		}
 	}
 
@@ -4599,7 +4596,7 @@ public class GolangParser extends Parser {
 			setState(693);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,60,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -4608,7 +4605,7 @@ public class GolangParser extends Parser {
 					setState(690);
 					parameterDecl();
 					}
-					}
+					} 
 				}
 				setState(695);
 				_errHandler.sync(this);
@@ -4640,11 +4637,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_parameterDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterParameterDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterParameterDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitParameterDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitParameterDecl(this);
 		}
 	}
 
@@ -4709,11 +4706,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_operand; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterOperand(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterOperand(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitOperand(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitOperand(this);
 		}
 	}
 
@@ -4785,11 +4782,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterLiteral(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitLiteral(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitLiteral(this);
 		}
 	}
 
@@ -4855,11 +4852,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_basicLit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterBasicLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterBasicLit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitBasicLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitBasicLit(this);
 		}
 	}
 
@@ -4904,11 +4901,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_operandName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterOperandName(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterOperandName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitOperandName(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitOperandName(this);
 		}
 	}
 
@@ -4957,11 +4954,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_qualifiedIdent; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterQualifiedIdent(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterQualifiedIdent(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitQualifiedIdent(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitQualifiedIdent(this);
 		}
 	}
 
@@ -5003,11 +5000,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_compositeLit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterCompositeLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterCompositeLit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitCompositeLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitCompositeLit(this);
 		}
 	}
 
@@ -5059,11 +5056,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_literalType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterLiteralType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterLiteralType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitLiteralType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitLiteralType(this);
 		}
 	}
 
@@ -5145,11 +5142,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_literalValue; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterLiteralValue(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterLiteralValue(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitLiteralValue(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitLiteralValue(this);
 		}
 	}
 
@@ -5210,11 +5207,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterElementList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterElementList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitElementList(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitElementList(this);
 		}
 	}
 
@@ -5230,7 +5227,7 @@ public class GolangParser extends Parser {
 			setState(756);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,69,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -5239,7 +5236,7 @@ public class GolangParser extends Parser {
 					setState(753);
 					keyedElement();
 					}
-					}
+					} 
 				}
 				setState(758);
 				_errHandler.sync(this);
@@ -5271,11 +5268,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_keyedElement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterKeyedElement(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterKeyedElement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitKeyedElement(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitKeyedElement(this);
 		}
 	}
 
@@ -5326,11 +5323,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_key; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterKey(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterKey(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitKey(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitKey(this);
 		}
 	}
 
@@ -5388,11 +5385,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_element; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterElement(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterElement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitElement(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitElement(this);
 		}
 	}
 
@@ -5470,11 +5467,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_structType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterStructType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterStructType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitStructType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitStructType(this);
 		}
 	}
 
@@ -5492,7 +5489,7 @@ public class GolangParser extends Parser {
 			setState(782);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,73,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -5501,7 +5498,7 @@ public class GolangParser extends Parser {
 					setState(778);
 					eos();
 					}
-					}
+					} 
 				}
 				setState(784);
 				_errHandler.sync(this);
@@ -5539,11 +5536,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_fieldDecl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterFieldDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterFieldDecl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitFieldDecl(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitFieldDecl(this);
 		}
 	}
 
@@ -5606,11 +5603,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_anonymousField; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterAnonymousField(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterAnonymousField(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitAnonymousField(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitAnonymousField(this);
 		}
 	}
 
@@ -5656,11 +5653,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_functionLit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterFunctionLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterFunctionLit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitFunctionLit(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitFunctionLit(this);
 		}
 	}
 
@@ -5718,11 +5715,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_primaryExpr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterPrimaryExpr(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterPrimaryExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitPrimaryExpr(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitPrimaryExpr(this);
 		}
 	}
 
@@ -5761,7 +5758,7 @@ public class GolangParser extends Parser {
 			setState(822);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,79,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -5820,7 +5817,7 @@ public class GolangParser extends Parser {
 						}
 						break;
 					}
-					}
+					} 
 				}
 				setState(824);
 				_errHandler.sync(this);
@@ -5847,11 +5844,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_selector; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSelector(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSelector(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSelector(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSelector(this);
 		}
 	}
 
@@ -5888,11 +5885,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_index; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterIndex(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterIndex(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitIndex(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitIndex(this);
 		}
 	}
 
@@ -5934,11 +5931,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_slice; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterSlice(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterSlice(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitSlice(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitSlice(this);
 		}
 	}
 
@@ -6032,11 +6029,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeAssertion; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterTypeAssertion(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterTypeAssertion(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitTypeAssertion(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitTypeAssertion(this);
 		}
 	}
 
@@ -6080,11 +6077,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterArguments(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitArguments(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitArguments(this);
 		}
 	}
 
@@ -6179,11 +6176,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_methodExpr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterMethodExpr(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterMethodExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitMethodExpr(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitMethodExpr(this);
 		}
 	}
 
@@ -6225,11 +6222,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_receiverType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterReceiverType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterReceiverType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitReceiverType(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitReceiverType(this);
 		}
 	}
 
@@ -6300,11 +6297,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterExpression(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitExpression(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitExpression(this);
 		}
 	}
 
@@ -6332,7 +6329,7 @@ public class GolangParser extends Parser {
 			setState(900);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,90,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -6387,11 +6384,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_unaryExpr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterUnaryExpr(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterUnaryExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitUnaryExpr(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitUnaryExpr(this);
 		}
 	}
 
@@ -6453,11 +6450,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_conversion; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterConversion(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterConversion(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitConversion(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitConversion(this);
 		}
 	}
 
@@ -6507,11 +6504,11 @@ public class GolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_eos; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).enterEos(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).enterEos(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GolangListener) ((GolangListener)listener).exitEos(this);
+			if ( listener instanceof GolangListener ) ((GolangListener)listener).exitEos(this);
 		}
 	}
 
@@ -6519,7 +6516,7 @@ public class GolangParser extends Parser {
 		EosContext _localctx = new EosContext(_ctx, getState());
 		enterRule(_localctx, 200, RULE_eos);
 		try {
-			setState(920);
+			setState(921);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,93,_ctx) ) {
 			case 1:
@@ -6548,6 +6545,13 @@ public class GolangParser extends Parser {
 				{
 				setState(919);
 				if (!(_input.LT(1).getText().equals("}") )) throw new FailedPredicateException(this, "_input.LT(1).getText().equals(\"}\") ");
+				}
+				break;
+			case 5:
+				enterOuterAlt(_localctx, 5);
+				{
+				setState(920);
+				if (!(_input.LT(1).getText().equals(")") )) throw new FailedPredicateException(this, "_input.LT(1).getText().equals(\")\") ");
 				}
 				break;
 			}
@@ -6629,12 +6633,14 @@ public class GolangParser extends Parser {
 			return lineTerminatorAhead();
 		case 10:
 			return _input.LT(1).getText().equals("}") ;
+		case 11:
+			return _input.LT(1).getText().equals(")") ;
 		}
 		return true;
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3M\u039d\4\2\t\2\4"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3M\u039e\4\2\t\2\4"+
 		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
 		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
 		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31\t\31"+
@@ -6693,13 +6699,13 @@ public class GolangParser extends Parser {
 		"\n`\5`\u0363\n`\3`\5`\u0366\n`\3`\5`\u0369\n`\5`\u036b\n`\3`\3`\3a\3a"+
 		"\3a\3a\3b\3b\3b\3b\3b\3b\3b\3b\3b\3b\5b\u037d\nb\3c\3c\3c\3c\3c\3c\7c"+
 		"\u0385\nc\fc\16c\u0388\13c\3d\3d\3d\5d\u038d\nd\3e\3e\3e\3e\5e\u0393\n"+
-		"e\3e\3e\3f\3f\3f\3f\5f\u039b\nf\3f\2\4\u00b4\u00c4g\2\4\6\b\n\f\16\20"+
-		"\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BDFHJLNPRTVXZ\\^`bdfhj"+
-		"lnprtvxz|~\u0080\u0082\u0084\u0086\u0088\u008a\u008c\u008e\u0090\u0092"+
+		"e\3e\3e\3f\3f\3f\3f\3f\5f\u039c\nf\3f\2\4\u00b4\u00c4g\2\4\6\b\n\f\16"+
+		"\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BDFHJLNPRTVXZ\\^`bd"+
+		"fhjlnprtvxz|~\u0080\u0082\u0084\u0086\u0088\u008a\u008c\u008e\u0090\u0092"+
 		"\u0094\u0096\u0098\u009a\u009c\u009e\u00a0\u00a2\u00a4\u00a6\u00a8\u00aa"+
 		"\u00ac\u00ae\u00b0\u00b2\u00b4\u00b6\u00b8\u00ba\u00bc\u00be\u00c0\u00c2"+
 		"\u00c4\u00c6\u00c8\u00ca\2\b\4\2\7\7@@\3\2\21\22\3\2\23\35\4\2CFII\4\2"+
-		"\23\35\67>\7\2\20\20\23\24\26\27\34\34??\2\u03c3\2\u00cc\3\2\2\2\4\u00de"+
+		"\23\35\67>\7\2\20\20\23\24\26\27\34\34??\2\u03c5\2\u00cc\3\2\2\2\4\u00de"+
 		"\3\2\2\2\6\u00e1\3\2\2\2\b\u00f0\3\2\2\2\n\u00f4\3\2\2\2\f\u00f9\3\2\2"+
 		"\2\16\u00fe\3\2\2\2\20\u0100\3\2\2\2\22\u010e\3\2\2\2\24\u0116\3\2\2\2"+
 		"\26\u011e\3\2\2\2\30\u0126\3\2\2\2\32\u0134\3\2\2\2\34\u0137\3\2\2\2\36"+
@@ -6724,7 +6730,7 @@ public class GolangParser extends Parser {
 		"\2\2\u00b4\u032a\3\2\2\2\u00b6\u033b\3\2\2\2\u00b8\u033e\3\2\2\2\u00ba"+
 		"\u0342\3\2\2\2\u00bc\u0356\3\2\2\2\u00be\u035b\3\2\2\2\u00c0\u036e\3\2"+
 		"\2\2\u00c2\u037c\3\2\2\2\u00c4\u037e\3\2\2\2\u00c6\u038c\3\2\2\2\u00c8"+
-		"\u038e\3\2\2\2\u00ca\u039a\3\2\2\2\u00cc\u00cd\5\4\3\2\u00cd\u00d3\5\u00ca"+
+		"\u038e\3\2\2\2\u00ca\u039b\3\2\2\2\u00cc\u00cd\5\4\3\2\u00cd\u00d3\5\u00ca"+
 		"f\2\u00ce\u00cf\5\6\4\2\u00cf\u00d0\5\u00caf\2\u00d0\u00d2\3\2\2\2\u00d1"+
 		"\u00ce\3\2\2\2\u00d2\u00d5\3\2\2\2\u00d3\u00d1\3\2\2\2\u00d3\u00d4\3\2"+
 		"\2\2\u00d4\u00db\3\2\2\2\u00d5\u00d3\3\2\2\2\u00d6\u00d7\5\f\7\2\u00d7"+
@@ -6964,17 +6970,17 @@ public class GolangParser extends Parser {
 		"\u038a\3\2\2\2\u038d\u00c7\3\2\2\2\u038e\u038f\5p9\2\u038f\u0390\7\5\2"+
 		"\2\u0390\u0392\5\u00c4c\2\u0391\u0393\7\n\2\2\u0392\u0391\3\2\2\2\u0392"+
 		"\u0393\3\2\2\2\u0393\u0394\3\2\2\2\u0394\u0395\7\6\2\2\u0395\u00c9\3\2"+
-		"\2\2\u0396\u039b\7\37\2\2\u0397\u039b\7\2\2\3\u0398\u039b\6f\13\2\u0399"+
-		"\u039b\6f\f\2\u039a\u0396\3\2\2\2\u039a\u0397\3\2\2\2\u039a\u0398\3\2"+
-		"\2\2\u039a\u0399\3\2\2\2\u039b\u00cb\3\2\2\2`\u00d3\u00db\u00e9\u00ed"+
-		"\u00f0\u00f9\u00fe\u0108\u010c\u0110\u0114\u011b\u0123\u012e\u0132\u013b"+
-		"\u0145\u0151\u0155\u015b\u015f\u016a\u017c\u0184\u0194\u01a4\u01a8\u01ac"+
-		"\u01ba\u01c1\u01c3\u01c7\u01cd\u01d0\u01d6\u01e2\u01e8\u01ef\u01f6\u0205"+
-		"\u020c\u0214\u0220\u0223\u022b\u0233\u0238\u023c\u0240\u0248\u0256\u025a"+
-		"\u0264\u0279\u028d\u0299\u02a3\u02a7\u02ac\u02ae\u02b7\u02bb\u02be\u02c9"+
-		"\u02ce\u02d4\u02e6\u02eb\u02ed\u02f6\u02fc\u0303\u0307\u0310\u031a\u031d"+
-		"\u0320\u032a\u0336\u0338\u0344\u0348\u034b\u0352\u0360\u0362\u0365\u0368"+
-		"\u036a\u037c\u0386\u038c\u0392\u039a";
+		"\2\2\u0396\u039c\7\37\2\2\u0397\u039c\7\2\2\3\u0398\u039c\6f\13\2\u0399"+
+		"\u039c\6f\f\2\u039a\u039c\6f\r\2\u039b\u0396\3\2\2\2\u039b\u0397\3\2\2"+
+		"\2\u039b\u0398\3\2\2\2\u039b\u0399\3\2\2\2\u039b\u039a\3\2\2\2\u039c\u00cb"+
+		"\3\2\2\2`\u00d3\u00db\u00e9\u00ed\u00f0\u00f9\u00fe\u0108\u010c\u0110"+
+		"\u0114\u011b\u0123\u012e\u0132\u013b\u0145\u0151\u0155\u015b\u015f\u016a"+
+		"\u017c\u0184\u0194\u01a4\u01a8\u01ac\u01ba\u01c1\u01c3\u01c7\u01cd\u01d0"+
+		"\u01d6\u01e2\u01e8\u01ef\u01f6\u0205\u020c\u0214\u0220\u0223\u022b\u0233"+
+		"\u0238\u023c\u0240\u0248\u0256\u025a\u0264\u0279\u028d\u0299\u02a3\u02a7"+
+		"\u02ac\u02ae\u02b7\u02bb\u02be\u02c9\u02ce\u02d4\u02e6\u02eb\u02ed\u02f6"+
+		"\u02fc\u0303\u0307\u0310\u031a\u031d\u0320\u032a\u0336\u0338\u0344\u0348"+
+		"\u034b\u0352\u0360\u0362\u0365\u0368\u036a\u037c\u0386\u038c\u0392\u039b";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
