@@ -32,7 +32,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         CharStream charStream = CharStreams.fromFileName(INPUT_FILE);
         PrintWriter printWriter = new PrintWriter(OUTPUT_FILE);
-        printWriter.println(parse(charStream));
+        printWriter.print(parse(charStream));
         printWriter.close();
     }
 }
