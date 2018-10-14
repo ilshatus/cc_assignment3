@@ -1,0 +1,1 @@
+Syntax error, line 14:4, no viable alternative at input 'package main\r\n\r\nimport "fmt"\r\n\r\nfunc main() {\r\n\r\n    messages := make(chan string)\r\n    signals := make(chan bool)\r\n    select {\r\n    case msg := <-messages:\r\n        fmt.Println("received message", msg)\r\n    default:\r\n        fmt.Println(    }'

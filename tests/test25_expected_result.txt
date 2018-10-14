@@ -1,0 +1,176 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        {
+          "importSpec": {
+            "importPath": "\"fmt\""
+          }
+        }
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "declaration": {
+          "varDecl": [
+            "var",
+            {
+              "varSpec": [
+                {
+                  "identifierList": "msg"
+                },
+                "\u003d",
+                {
+                  "expressionList": {
+                    "expression": {
+                      "unaryExpr": {
+                        "primaryExpr": {
+                          "operand": {
+                            "literal": {
+                              "basicLit": "\"hi\""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "main",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "a"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": [
+                                    {
+                                      "expression": [
+                                        {
+                                          "expression": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "123"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "+",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "123"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        "/",
+                                        {
+                                          "expression": {
+                                            "unaryExpr": {
+                                              "primaryExpr": {
+                                                "operand": {
+                                                  "literal": {
+                                                    "basicLit": "123"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "*",
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "333"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "\u003cEOF\u003e"
+  ]
+}

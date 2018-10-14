@@ -1,0 +1,40 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        "(",
+        {
+          "importSpec": {
+            "importPath": "\"fdsfs\""
+          }
+        },
+        {
+          "eos": ";"
+        },
+        {
+          "importSpec": [
+            ".",
+            {
+              "importPath": "\"fdsf\""
+            }
+          ]
+        },
+        {
+          "eos": []
+        },
+        ")"
+      ]
+    },
+    "\u003cEOF\u003e"
+  ]
+}

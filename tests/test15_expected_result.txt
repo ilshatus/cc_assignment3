@@ -1,0 +1,1 @@
+Syntax error, line 7:13, no viable alternative at input 'package main\r\n\r\nimport "fmt"\r\n\r\nfunc main()\r\n\r\n    messages :='

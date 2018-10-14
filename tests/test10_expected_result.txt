@@ -1,0 +1,2274 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        {
+          "importSpec": {
+            "importPath": "\"fmt\""
+          }
+        }
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "main",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "s"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "sliceType": [
+                                                    "[",
+                                                    "]",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "string"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": {
+                                                      "operand": {
+                                                        "literal": {
+                                                          "basicLit": "3"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"emp:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "s"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "s"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "index": [
+                                            "[",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "0"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "]"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "\"a\""
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "s"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "index": [
+                                            "[",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "1"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "]"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "\"b\""
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "s"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "index": [
+                                            "[",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "2"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "]"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "\"c\""
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"set:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "s"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"get:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": [
+                                                    {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "operandName": "s"
+                                                        }
+                                                      }
+                                                    },
+                                                    {
+                                                      "index": [
+                                                        "[",
+                                                        {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "2"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "]"
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"len:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": [
+                                                    {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "operandName": "len"
+                                                        }
+                                                      }
+                                                    },
+                                                    {
+                                                      "arguments": [
+                                                        "(",
+                                                        {
+                                                          "expressionList": {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "s"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        ")"
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "s"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "append"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "expressionList": [
+                                                {
+                                                  "expression": {
+                                                    "unaryExpr": {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "operandName": "s"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                ",",
+                                                {
+                                                  "expression": {
+                                                    "unaryExpr": {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "literal": {
+                                                            "basicLit": "\"d\""
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "s"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "append"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "expressionList": [
+                                                {
+                                                  "expression": {
+                                                    "unaryExpr": {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "operandName": "s"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                ",",
+                                                {
+                                                  "expression": {
+                                                    "unaryExpr": {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "literal": {
+                                                            "basicLit": "\"e\""
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                ",",
+                                                {
+                                                  "expression": {
+                                                    "unaryExpr": {
+                                                      "primaryExpr": {
+                                                        "operand": {
+                                                          "literal": {
+                                                            "basicLit": "\"f\""
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"apd:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "s"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "c"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "sliceType": [
+                                                    "[",
+                                                    "]",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "string"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "len"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "arguments": [
+                                                          "(",
+                                                          {
+                                                            "expressionList": {
+                                                              "expression": {
+                                                                "unaryExpr": {
+                                                                  "primaryExpr": {
+                                                                    "operand": {
+                                                                      "operandName": "s"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "copy"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "c"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "s"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"cpy:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "c"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "l"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "s"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "slice": [
+                                            "[",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "2"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ":",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "5"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "]"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"sl1:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "l"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "l"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "s"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "slice": [
+                                            "[",
+                                            ":",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "5"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "]"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"sl2:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "l"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "l"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "s"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "slice": [
+                                            "[",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "2"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ":",
+                                            "]"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"sl3:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "l"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "t"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "compositeLit": [
+                                              {
+                                                "literalType": {
+                                                  "sliceType": [
+                                                    "[",
+                                                    "]",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "string"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "literalValue": [
+                                                  "{",
+                                                  {
+                                                    "elementList": [
+                                                      {
+                                                        "keyedElement": {
+                                                          "element": {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"g\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ",",
+                                                      {
+                                                        "keyedElement": {
+                                                          "element": {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"h\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ",",
+                                                      {
+                                                        "keyedElement": {
+                                                          "element": {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"i\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "}"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"dcl:\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "t"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "twoD"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "sliceType": [
+                                                    "[",
+                                                    "]",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeLit": {
+                                                            "sliceType": [
+                                                              "[",
+                                                              "]",
+                                                              {
+                                                                "elementType": {
+                                                                  "type": {
+                                                                    "typeName": "int"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": {
+                                                      "operand": {
+                                                        "literal": {
+                                                          "basicLit": "3"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "forStmt": [
+                            "for",
+                            {
+                              "forClause": [
+                                {
+                                  "simpleStmt": {
+                                    "shortVarDecl": [
+                                      {
+                                        "identifierList": "i"
+                                      },
+                                      ":\u003d",
+                                      {
+                                        "expressionList": {
+                                          "expression": {
+                                            "unaryExpr": {
+                                              "primaryExpr": {
+                                                "operand": {
+                                                  "literal": {
+                                                    "basicLit": "0"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                ";",
+                                {
+                                  "expression": [
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "i"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "\u003c",
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "3"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                ";",
+                                {
+                                  "simpleStmt": {
+                                    "incDecStmt": [
+                                      {
+                                        "expression": {
+                                          "unaryExpr": {
+                                            "primaryExpr": {
+                                              "operand": {
+                                                "operandName": "i"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "++"
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "block": [
+                                "{",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "shortVarDecl": [
+                                            {
+                                              "identifierList": "innerLen"
+                                            },
+                                            ":\u003d",
+                                            {
+                                              "expressionList": {
+                                                "expression": [
+                                                  {
+                                                    "expression": {
+                                                      "unaryExpr": {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "i"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "+",
+                                                  {
+                                                    "expression": {
+                                                      "unaryExpr": {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "literal": {
+                                                              "basicLit": "1"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    },
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "assignment": [
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "twoD"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "index": [
+                                                          "[",
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "i"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "]"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "assign_op": "\u003d"
+                                            },
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "make"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "arguments": [
+                                                          "(",
+                                                          {
+                                                            "type": {
+                                                              "typeLit": {
+                                                                "sliceType": [
+                                                                  "[",
+                                                                  "]",
+                                                                  {
+                                                                    "elementType": {
+                                                                      "type": {
+                                                                        "typeName": "int"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          },
+                                                          ",",
+                                                          {
+                                                            "expressionList": {
+                                                              "expression": {
+                                                                "unaryExpr": {
+                                                                  "primaryExpr": {
+                                                                    "operand": {
+                                                                      "operandName": "innerLen"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    },
+                                    {
+                                      "statement": {
+                                        "forStmt": [
+                                          "for",
+                                          {
+                                            "forClause": [
+                                              {
+                                                "simpleStmt": {
+                                                  "shortVarDecl": [
+                                                    {
+                                                      "identifierList": "j"
+                                                    },
+                                                    ":\u003d",
+                                                    {
+                                                      "expressionList": {
+                                                        "expression": {
+                                                          "unaryExpr": {
+                                                            "primaryExpr": {
+                                                              "operand": {
+                                                                "literal": {
+                                                                  "basicLit": "0"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              ";",
+                                              {
+                                                "expression": [
+                                                  {
+                                                    "expression": {
+                                                      "unaryExpr": {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "j"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "\u003c",
+                                                  {
+                                                    "expression": {
+                                                      "unaryExpr": {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "innerLen"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              ";",
+                                              {
+                                                "simpleStmt": {
+                                                  "incDecStmt": [
+                                                    {
+                                                      "expression": {
+                                                        "unaryExpr": {
+                                                          "primaryExpr": {
+                                                            "operand": {
+                                                              "operandName": "j"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "++"
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "block": [
+                                              "{",
+                                              {
+                                                "statementList": [
+                                                  {
+                                                    "statement": {
+                                                      "simpleStmt": {
+                                                        "assignment": [
+                                                          {
+                                                            "expressionList": {
+                                                              "expression": {
+                                                                "unaryExpr": {
+                                                                  "primaryExpr": [
+                                                                    {
+                                                                      "primaryExpr": [
+                                                                        {
+                                                                          "primaryExpr": {
+                                                                            "operand": {
+                                                                              "operandName": "twoD"
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "index": [
+                                                                            "[",
+                                                                            {
+                                                                              "expression": {
+                                                                                "unaryExpr": {
+                                                                                  "primaryExpr": {
+                                                                                    "operand": {
+                                                                                      "operandName": "i"
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            "]"
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "index": [
+                                                                        "[",
+                                                                        {
+                                                                          "expression": {
+                                                                            "unaryExpr": {
+                                                                              "primaryExpr": {
+                                                                                "operand": {
+                                                                                  "operandName": "j"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "]"
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "assign_op": "\u003d"
+                                                          },
+                                                          {
+                                                            "expressionList": {
+                                                              "expression": [
+                                                                {
+                                                                  "expression": {
+                                                                    "unaryExpr": {
+                                                                      "primaryExpr": {
+                                                                        "operand": {
+                                                                          "operandName": "i"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "+",
+                                                                {
+                                                                  "expression": {
+                                                                    "unaryExpr": {
+                                                                      "primaryExpr": {
+                                                                        "operand": {
+                                                                          "operandName": "j"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "eos": []
+                                                  }
+                                                ]
+                                              },
+                                              "}"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                },
+                                "}"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"2d: \""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "twoD"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "\u003cEOF\u003e"
+  ]
+}

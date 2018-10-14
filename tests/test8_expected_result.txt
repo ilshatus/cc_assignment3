@@ -1,0 +1,709 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        {
+          "importSpec": {
+            "importPath": "\"fmt\""
+          }
+        }
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "main",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "ifStmt": [
+                            "if",
+                            {
+                              "expression": [
+                                {
+                                  "expression": [
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "7"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "%",
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "2"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "\u003d\u003d",
+                                {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "0"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "block": [
+                                "{",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "\"7 четное число\""
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                },
+                                "}"
+                              ]
+                            },
+                            "else",
+                            {
+                              "block": [
+                                "{",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "\"7 нечетное число\""
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                },
+                                "}"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "ifStmt": [
+                            "if",
+                            {
+                              "expression": [
+                                {
+                                  "expression": [
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "8"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "%",
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "4"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "\u003d\u003d",
+                                {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "0"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "block": [
+                                "{",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "\"8 делится на 4\""
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                },
+                                "}"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "ifStmt": [
+                            "if",
+                            {
+                              "simpleStmt": {
+                                "shortVarDecl": [
+                                  {
+                                    "identifierList": "num"
+                                  },
+                                  ":\u003d",
+                                  {
+                                    "expressionList": {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "9"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            ";",
+                            {
+                              "expression": [
+                                {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "num"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "\u003c",
+                                {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "0"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "block": [
+                                "{",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": [
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "num"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ",",
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"отрицательное число\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                },
+                                "}"
+                              ]
+                            },
+                            "else",
+                            {
+                              "ifStmt": [
+                                "if",
+                                {
+                                  "expression": [
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "num"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "\u003c",
+                                    {
+                                      "expression": {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "literal": {
+                                                "basicLit": "10"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "block": [
+                                    "{",
+                                    {
+                                      "statementList": [
+                                        {
+                                          "statement": {
+                                            "simpleStmt": {
+                                              "expressionStmt": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": [
+                                                          {
+                                                            "primaryExpr": {
+                                                              "operand": {
+                                                                "operandName": "fmt"
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "selector": [
+                                                              ".",
+                                                              "Println"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "arguments": [
+                                                          "(",
+                                                          {
+                                                            "expressionList": [
+                                                              {
+                                                                "expression": {
+                                                                  "unaryExpr": {
+                                                                    "primaryExpr": {
+                                                                      "operand": {
+                                                                        "operandName": "num"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              ",",
+                                                              {
+                                                                "expression": {
+                                                                  "unaryExpr": {
+                                                                    "primaryExpr": {
+                                                                      "operand": {
+                                                                        "literal": {
+                                                                          "basicLit": "\"состоит из 1 цифры\""
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "eos": []
+                                        }
+                                      ]
+                                    },
+                                    "}"
+                                  ]
+                                },
+                                "else",
+                                {
+                                  "block": [
+                                    "{",
+                                    {
+                                      "statementList": [
+                                        {
+                                          "statement": {
+                                            "simpleStmt": {
+                                              "expressionStmt": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": [
+                                                          {
+                                                            "primaryExpr": {
+                                                              "operand": {
+                                                                "operandName": "fmt"
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "selector": [
+                                                              ".",
+                                                              "Println"
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "arguments": [
+                                                          "(",
+                                                          {
+                                                            "expressionList": [
+                                                              {
+                                                                "expression": {
+                                                                  "unaryExpr": {
+                                                                    "primaryExpr": {
+                                                                      "operand": {
+                                                                        "operandName": "num"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              ",",
+                                                              {
+                                                                "expression": {
+                                                                  "unaryExpr": {
+                                                                    "primaryExpr": {
+                                                                      "operand": {
+                                                                        "literal": {
+                                                                          "basicLit": "\"состоит из нескольких цифр\""
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          ")"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "eos": []
+                                        }
+                                      ]
+                                    },
+                                    "}"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "\u003cEOF\u003e"
+  ]
+}

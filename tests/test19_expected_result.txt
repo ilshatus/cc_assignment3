@@ -1,0 +1,875 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        {
+          "importSpec": {
+            "importPath": "\"fmt\""
+          }
+        }
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "main",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "messages"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "channelType": [
+                                                    "chan",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "string"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "signals"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "channelType": [
+                                                    "chan",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "bool"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "selectStmt": [
+                            "select",
+                            "{",
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": [
+                                    "case",
+                                    {
+                                      "recvStmt": [
+                                        {
+                                          "identifierList": "msg"
+                                        },
+                                        ":\u003d",
+                                        {
+                                          "expression": {
+                                            "unaryExpr": [
+                                              "\u003c-",
+                                              {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "messages"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": [
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"received message\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ",",
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "msg"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": "default"
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "\"no message received\""
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "}"
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "assignment": [
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "msg"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "assign_op": "\u003d"
+                              },
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "literal": {
+                                            "basicLit": "\"hi\""
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "selectStmt": [
+                            "select",
+                            "{",
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": [
+                                    "case",
+                                    {
+                                      "sendStmt": [
+                                        {
+                                          "expression": {
+                                            "unaryExpr": {
+                                              "primaryExpr": {
+                                                "operand": {
+                                                  "operandName": "messages"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "\u003c-",
+                                        {
+                                          "expression": {
+                                            "unaryExpr": {
+                                              "primaryExpr": {
+                                                "operand": {
+                                                  "operandName": "msg"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": [
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"sent message\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ",",
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "msg"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": "default"
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "\"no message sent\""
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "}"
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "selectStmt": [
+                            "select",
+                            "{",
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": [
+                                    "case",
+                                    {
+                                      "recvStmt": [
+                                        {
+                                          "identifierList": "msg"
+                                        },
+                                        ":\u003d",
+                                        {
+                                          "expression": {
+                                            "unaryExpr": [
+                                              "\u003c-",
+                                              {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "messages"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": [
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"received message\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ",",
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "msg"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": [
+                                    "case",
+                                    {
+                                      "recvStmt": [
+                                        {
+                                          "identifierList": "sig"
+                                        },
+                                        ":\u003d",
+                                        {
+                                          "expression": {
+                                            "unaryExpr": [
+                                              "\u003c-",
+                                              {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "signals"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": [
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "literal": {
+                                                                      "basicLit": "\"received signal\""
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          ",",
+                                                          {
+                                                            "expression": {
+                                                              "unaryExpr": {
+                                                                "primaryExpr": {
+                                                                  "operand": {
+                                                                    "operandName": "sig"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commClause": [
+                                {
+                                  "commCase": "default"
+                                },
+                                ":",
+                                {
+                                  "statementList": [
+                                    {
+                                      "statement": {
+                                        "simpleStmt": {
+                                          "expressionStmt": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": [
+                                                  {
+                                                    "primaryExpr": [
+                                                      {
+                                                        "primaryExpr": {
+                                                          "operand": {
+                                                            "operandName": "fmt"
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "selector": [
+                                                          ".",
+                                                          "Println"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "arguments": [
+                                                      "(",
+                                                      {
+                                                        "expressionList": {
+                                                          "expression": {
+                                                            "unaryExpr": {
+                                                              "primaryExpr": {
+                                                                "operand": {
+                                                                  "literal": {
+                                                                    "basicLit": "\"no activity\""
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      ")"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "eos": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "}"
+                          ]
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "\u003cEOF\u003e"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        {
+          "importSpec": {
+            "importPath": "\"fmt\""
+          }
+        }
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "main",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": {
+                                            "expression": {
+                                              "unaryExpr": {
+                                                "primaryExpr": {
+                                                  "operand": {
+                                                    "literal": {
+                                                      "basicLit": "\"Hello, 世界\""
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "\u003cEOF\u003e"
+  ]
+}

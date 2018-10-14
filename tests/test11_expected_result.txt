@@ -1,0 +1,632 @@
+{
+  "sourceFile": [
+    {
+      "packageClause": [
+        "package",
+        "main"
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "importDecl": [
+        "import",
+        {
+          "importSpec": {
+            "importPath": "\"fmt\""
+          }
+        }
+      ]
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "ping",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    {
+                      "parameterList": [
+                        {
+                          "parameterDecl": [
+                            {
+                              "identifierList": "pings"
+                            },
+                            {
+                              "type": {
+                                "typeLit": {
+                                  "channelType": [
+                                    "chan",
+                                    "\u003c-",
+                                    {
+                                      "elementType": {
+                                        "type": {
+                                          "typeName": "string"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        ",",
+                        {
+                          "parameterDecl": [
+                            {
+                              "identifierList": "msg"
+                            },
+                            {
+                              "type": {
+                                "typeName": "string"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "sendStmt": [
+                              {
+                                "expression": {
+                                  "unaryExpr": {
+                                    "primaryExpr": {
+                                      "operand": {
+                                        "operandName": "pings"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "\u003c-",
+                              {
+                                "expression": {
+                                  "unaryExpr": {
+                                    "primaryExpr": {
+                                      "operand": {
+                                        "operandName": "msg"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "pong",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    {
+                      "parameterList": [
+                        {
+                          "parameterDecl": [
+                            {
+                              "identifierList": "pings"
+                            },
+                            {
+                              "type": {
+                                "typeLit": {
+                                  "channelType": [
+                                    "\u003c-",
+                                    "chan",
+                                    {
+                                      "elementType": {
+                                        "type": {
+                                          "typeName": "string"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        ",",
+                        {
+                          "parameterDecl": [
+                            {
+                              "identifierList": "pongs"
+                            },
+                            {
+                              "type": {
+                                "typeLit": {
+                                  "channelType": [
+                                    "chan",
+                                    "\u003c-",
+                                    {
+                                      "elementType": {
+                                        "type": {
+                                          "typeName": "string"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "msg"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": [
+                                      "\u003c-",
+                                      {
+                                        "unaryExpr": {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "pings"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "sendStmt": [
+                              {
+                                "expression": {
+                                  "unaryExpr": {
+                                    "primaryExpr": {
+                                      "operand": {
+                                        "operandName": "pongs"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "\u003c-",
+                              {
+                                "expression": {
+                                  "unaryExpr": {
+                                    "primaryExpr": {
+                                      "operand": {
+                                        "operandName": "msg"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "eos": []
+    },
+    {
+      "topLevelDecl": {
+        "functionDecl": [
+          "func",
+          "main",
+          {
+            "function": [
+              {
+                "signature": {
+                  "parameters": [
+                    "(",
+                    ")"
+                  ]
+                }
+              },
+              {
+                "block": [
+                  "{",
+                  {
+                    "statementList": [
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "pings"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "channelType": [
+                                                    "chan",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "string"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": {
+                                                      "operand": {
+                                                        "literal": {
+                                                          "basicLit": "1"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "shortVarDecl": [
+                              {
+                                "identifierList": "pongs"
+                              },
+                              ":\u003d",
+                              {
+                                "expressionList": {
+                                  "expression": {
+                                    "unaryExpr": {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "make"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "arguments": [
+                                            "(",
+                                            {
+                                              "type": {
+                                                "typeLit": {
+                                                  "channelType": [
+                                                    "chan",
+                                                    {
+                                                      "elementType": {
+                                                        "type": {
+                                                          "typeName": "string"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expressionList": {
+                                                "expression": {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": {
+                                                      "operand": {
+                                                        "literal": {
+                                                          "basicLit": "1"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ")"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "ping"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "pings"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "literal": {
+                                                        "basicLit": "\"passed message\""
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": {
+                                        "operand": {
+                                          "operandName": "pong"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": [
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "pings"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            ",",
+                                            {
+                                              "expression": {
+                                                "unaryExpr": {
+                                                  "primaryExpr": {
+                                                    "operand": {
+                                                      "operandName": "pongs"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      },
+                      {
+                        "statement": {
+                          "simpleStmt": {
+                            "expressionStmt": {
+                              "expression": {
+                                "unaryExpr": {
+                                  "primaryExpr": [
+                                    {
+                                      "primaryExpr": [
+                                        {
+                                          "primaryExpr": {
+                                            "operand": {
+                                              "operandName": "fmt"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "selector": [
+                                            ".",
+                                            "Println"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "arguments": [
+                                        "(",
+                                        {
+                                          "expressionList": {
+                                            "expression": {
+                                              "unaryExpr": [
+                                                "\u003c-",
+                                                {
+                                                  "unaryExpr": {
+                                                    "primaryExpr": {
+                                                      "operand": {
+                                                        "operandName": "pongs"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        ")"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eos": []
+                      }
+                    ]
+                  },
+                  "}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "\u003cEOF\u003e"
+  ]
+}
